@@ -1,0 +1,185 @@
+header {
+    color:#db974e;
+    background-color:#2b2a28;
+    background-position:center;
+    background-repeat:no-repeat;
+    border-radius:0px;
+    padding: 20px;
+    }
+h1 {
+    margin:0;
+    padding:5px 10px;
+    font-size:42pt;
+    line-height:36pt;
+    font-weight:lighter;
+  }
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:12pt;
+    background-color:#2b2a28;
+}
+nav{
+    color:#db974e;
+    background-color:#2b2a28;
+    padding:5px 10px;
+    font-size:14pt;
+    font-weight:bold;
+    text-decoration:none;
+    position:relative;
+}
+nav a{
+    color:#FFFFFF;
+    text-decoration:none;
+    padding:5px 10px;
+    margin:0 5px;
+    border-radius:5px;
+    background-color:#2b2a28;
+    border:1px solid #db974e;
+    transition: background-color 0.3s, color 0.3s;
+    text-align:center;
+    display:inline-block;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:12pt;
+    font-weight:lighter;
+    line-height:36pt;
+    font-size:14pt;
+    font-weight:bold;
+}
+nav a:hover{
+    background-color:#db974e;
+    color:#2b2a28;
+}
+#debut_ep_vhs {
+    background-image: url('images/vhs_epcover_v1.jpg');
+    color:#FFFFFF;
+    background-color:#2b2a28;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    border-radius:0px;
+    width:100%;
+    max-width: 2500px;
+    height: 100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    font-size: 30pt;
+    font-weight: bold;
+    position:relative;
+}
+#debut_ep_vhs p{
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 10);
+}
+#sundown_single {
+    background-image: url('images/headup-ep-cover-v3.jpg');
+    color:#FFFFFF;
+    background-color:#2b2a28;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    border-radius:0px;
+    width:100%;
+    max-width: 2500px;
+    height: 100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    font-size: 30pt;
+    font-weight: bold;
+    position:relative;
+}
+#sundown_single p{
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 10);
+}
+#band_members{
+    background-color:#dfd9d7;
+    color:#000000;
+    margin:5px 0 0 0;
+    height:50vh;
+    display:flex;
+    flex-direction:column;
+    padding:5px 10px;
+    font-size:12pt;
+    font-weight:bold;
+    text-align:right;
+    text-decoration:none;
+    position:relative;
+}
+#contact_page{
+    color:#000000;
+    background-color:#dfd9d7;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    height: 100vh;
+    display:flex;
+    flex-direction:column;
+    margin:5px 0 0 0;
+    padding:20px;
+    align-items: center;
+    font-size:18pt;
+    font-weight:bold;
+    text-decoration:none;
+    text-align:center;
+    position:relative;
+}
+#contact_page a{
+    color:#db974e;
+    text-decoration:none;
+    margin:0 5px;
+    padding:20px 10px;
+    border-radius:5px;
+    background-color:#f9f4f3;
+    width:800px;
+    box-shadow: 10px 10px 40px -25px #000000;
+    transition: background-color 0.3s, color 0.3s;
+    text-align:center;
+    display:inline-block;
+    align-items:center;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:12pt;
+    font-weight:lighter;
+}
+#contact_page a:hover{
+    background-color:#db974e;
+    color:#2b2a28;
+}
+.stream-button{
+    background-color: #2b2a28;
+    color:#FFFFFF;
+    padding: 10px 20px;
+    font-size: 16pt;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+#social-media{
+    font-size: 30px;
+    color: white;
+    transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+#socal-media i:hover {
+    color: #ffcc00; /* Change color on hover */
+    transform: scale(1.2);
+}
+footer{
+    color:#db974e;
+    background-color:#2b2a28;
+    padding:5px 10px;
+    margin:1px;
+    font-size:14pt;
+    font-weight:bold;
+    text-decoration:none;
+    position:relative;
+    text-align:center;
+}
+footer a{
+    color:#FFFFFF;
+}
