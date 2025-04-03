@@ -1,4 +1,5 @@
 //script start
+//Release Countdown Timer
 function getMidnightLocal(year, month, day) {
     return new Date(year, month - 1, day, 0, 0, 0, 0).getTime();
 }
@@ -19,4 +20,67 @@ function updateCountdown(eventTime, elementId) {
 
 setInterval(() => updateCountdown(sundownDate, "sundown-timer"), 1000);
 setInterval(() => updateCountdown(vhsDate, "vhs-timer"), 1000);
+//Countdown Timer end
+//Password Protected Snippets
+document.addEventListener("DOMContentLoaded", function () {
+    const inputElement = document.getElementById("password");
+    if (inputElement) {
+        inputElement.addEventListener("keydown", function (event) {
+            if (event.key === "Enter") {
+                event.preventDefault();
+                revealSnippets();
+            }
+        });
+    } else {
+        console.error("Input field not found.");
+    }
+});
+function revealSnippets(){
+    let inputValue = document.getElementById("password").value
+    if(inputValue === "VHS2025"){
+        document.getElementById("snippet_content").style.display = "block";
+    }
+    else{
+        alert("Incorrect Password!");
+    }
+}
+function playSnippets(elementID) {
+    let audio = document.getElementById(elementID);
+    if (!audio) {
+        console.error("Audio element not found:", elementID);
+        return;
+    }
+    audio.play();
+    
+    // Find the correct button
+    let button = document.querySelector(`[onclick="playSnippets('${elementID}')"]`);
+    if (button) {
+        button.innerHTML = "⏸︎Pause";
+        button.setAttribute("onclick", `pauseSnippets('${elementID}')`);
+    }
+}
+
+function pauseSnippets(elementID) {
+    let audio = document.getElementById(elementID);
+    if (!audio) return;
+    audio.pause();
+    
+    // Find the correct button
+    let button = document.querySelector(`[onclick="pauseSnippets('${elementID}')"]`);
+    if (button) {
+        button.innerHTML = "▶ Play";
+        button.setAttribute("onclick", `playSnippets('${elementID}')`);
+    }
+}
+//Snippet Player end
+//Responsive Navigation Bar
+function toggleMenu(){
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+//Responsive Navigation Bar end
 //script end

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solway Pilot - Dates</title>
+    <title>Solway Pilot - Snippets</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="script.js" defer></script>
@@ -12,16 +12,29 @@
     <header>
         <h1>SOLWAY PILOT</h1>
     </header>
-    <nav>
+    <nav class = "topnav" id = "myTopnav">
         <a href = "index.html">Home</a>
         <a href = "music.html">Music</a>
-        <a href = "dates.html">Dates</a>
-        <a href = "merch.html">Merch</a>
+        <!--a href = "dates.html">Dates</a-->
+        <!--a href = "merch.html">Merch</a-->
         <a href = "contact.html">Contact</a>
         <a href = "javascript:void(0);" class = "menu_icon" onclick = "toggleMenu()"><i class = "fa fa-bars"></i></a>
-     </nav>
+    </nav>
     <main>
-        <h1>Nothing here yet...</h1>
+        <div id = "snippet_page">
+            <p>Password:</p>
+            <input type="password" id="password" placeholder="Enter password">
+            <br>
+            <button onclick = "revealSnippets()">Submit</button>
+            <div id="snippet_content" style = "display:none;">
+                <p>Venerate</p>
+                <audio id = "venerate_snippet" src =  "venerate_snippet.mp3"></audio>
+                <button id = "v_play_button" onclick = "playSnippets('venerate_snippet')"">▶ Play</button>
+                <p>Hierarchy</p>
+                <audio id = "hierarchy_snippet" src = "hierarchy_snippet.mp3"></audio>
+                <button id = "h_play_button" onclick = "playSnippets('hierarchy_snippet')">▶ Play</button>
+            </div>
+        </div>
     </main>
     <footer>
         <h2>&copy; 2025 Solway Pilot.</h2>
