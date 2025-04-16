@@ -131,7 +131,7 @@ button:hover{
     background-repeat:no-repeat;
     background-size:cover;
     border-radius:5px;
-    height: 30vh;
+    height: 40vh;
     width: 30vw;
     display:flex;
     flex-direction:column;

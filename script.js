@@ -55,7 +55,7 @@ function playSnippets(elementID) {
     // Find the correct button
     let button = document.querySelector(`[onclick="playSnippets('${elementID}')"]`);
     if (button) {
-        button.innerHTML = "⏸︎Pause";
+        button.innerHTML = "⏸︎";
         button.setAttribute("onclick", `pauseSnippets('${elementID}')`);
     }
 }
@@ -68,7 +68,7 @@ function pauseSnippets(elementID) {
     // Find the correct button
     let button = document.querySelector(`[onclick="pauseSnippets('${elementID}')"]`);
     if (button) {
-        button.innerHTML = "▶ Play";
+        button.innerHTML = "▶";
         button.setAttribute("onclick", `playSnippets('${elementID}')`);
     }
 }
