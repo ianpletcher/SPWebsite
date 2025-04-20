@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 function revealSnippets(){
     let inputValue = document.getElementById("password").value
-    if(inputValue === "VHS2025"){
+    if(inputValue === "FALLONMYOWN"){
         document.getElementById("snippet_content").style.display = "block";
     }
     else{
