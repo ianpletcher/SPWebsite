@@ -199,7 +199,7 @@ button:hover{
     position: relative;
     color: #FFFFFF;
     margin: auto;
-    padding: 20px;
+    padding: 30px;
     height: 50vh;
     display: flex;
     flex-direction: column;
@@ -233,10 +233,13 @@ button:hover{
     border: 1px solid #c6c7c9;
     border-radius:5px;
     padding: 20px 20px;
-    margin:5px 0 5px 0;
+    margin: 5px 0 5px 0;
     font-size: 30pt;
     font-weight: bold;
     text-align: center;
+    display: flex;
+    align-items:center;
+    justify-content: center;
     text-decoration: none;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
